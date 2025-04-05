@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Create participants list
         const participantsList = details.participants
-          .map((participant) => `<li>${participant}</li>`)
+          .map((participant) => `<li>${escapeHTML(participant)}</li>`)
           .join("");
 
         activityCard.innerHTML = `
